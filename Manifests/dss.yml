@@ -5,12 +5,12 @@ metadata:
   name: yelp-camp-secrets
 type: Opaque
 data:
-  CLOUDINARY_CLOUD_NAME: dxazwdsuo
-  CLOUDINARY_KEY: 526327534993596
-  CLOUDINARY_SECRET: h6Yce5p1yz40dSleG80zwzuhDBc
-  MAPBOX_TOKEN: sk.eyJ1IjoiYWJoaXJhbTAzIiwiYSI6ImNtY3hqajM4MzA5cjMyaXNhbnVwZXdpOWYifQ.RsyirOf7sjrnKO9ECRLeRw
-  DB_URL: mongodb+srv://abhi:%23Password%24123@abhi.zty6thz.mongodb.net/?retryWrites=true&w=majority&appName=abhi
-  SECRET: abhi
+  CLOUDINARY_CLOUD_NAME: ZHhhendkc3Vv
+  CLOUDINARY_KEY: NTI2MzI3NTM0OTkzNTk2
+  CLOUDINARY_SECRET: aDZZY2U1cDF5ejQwZFNsZUc4MHp3enVoREJj
+  MAPBOX_TOKEN: c2suZXlKMWlKb2lBVGhJUm1ZMjlIVnVZMjlrYkdWeUlJNjBJbWJjampNMzgzMDlyMzJpU2FudVBld2k5WWlmaVJzeXJPZjdzanJuS085RUNSTGVSdw==
+  DB_URL: J21vbmdvZCtzcnY6Ly9hYmhpOiNQYXNzd29yZCQxMjNAYWJoaS56dHk2dGh6Lm1vbmdvZGIubmV0Lz9yZXRyeVdyaXRlcz10cnVlJnc9bWFqb3JpdHkmYXBwTmFtZT1hYmhpJw==
+  SECRET: YWJoaQ==
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: adijaiswal/campa:latest
+          image: rabhi03/campa:latest
           ports:
             - containerPort: 3000
           env:
