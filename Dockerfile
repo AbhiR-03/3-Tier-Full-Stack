@@ -8,6 +8,7 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Install dependencies
+RUN npm install dotenv
 RUN npm install
 
 # Copy the rest of project files into this image
